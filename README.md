@@ -1,8 +1,4 @@
-#READ ME
-#這是為了方便自己寫的一些工具類
-
-
-*************Android ImageZoom***********
+ImageView 放大滑動的方法：
 1.先到https://github.com/chrisbanes/PhotoView將
 allprojects {
 	repositories {
@@ -14,8 +10,7 @@ allprojects {
     implementation 'com.github.chrisbanes:PhotoView:2.1.3'
 }
 之後把這行複製到build.gradle (app)內，2.1.3是版本，需要看網頁中JitPack顯示的版本。
-3.設定ImageView 元件
-<ImageView
+3.設定ImageView 元件<ImageView
     android:id="@+id/image"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -28,9 +23,6 @@ allprojects {
 
 PhotoViewAttacher mAttacher;
 imageuri = Uri.parse(get.getStringExtra("image"));
-imageView.setImageBitmap(new ImageTools(this).imageBitmap(imageuri));
-mAttacher = new PhotoViewAttacher(imageView);
-
-**************StringTools*************
-
+        imageView.setImageBitmap(new ImageTools(this).imageBitmap(imageuri));
+        mAttacher = new PhotoViewAttacher(imageView);
 
