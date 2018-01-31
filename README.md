@@ -2,7 +2,7 @@
 #這是為了方便自己寫的一些工具類
 
 
-***************************Android ImageZoom***********************************
+*************Android ImageZoom***********
 1.	先到https://github.com/chrisbanes/PhotoView將
 allprojects {
 	repositories {
@@ -30,6 +30,6 @@ imageuri = Uri.parse(get.getStringExtra("image"));
 imageView.setImageBitmap(new ImageTools(this).imageBitmap(imageuri));
 mAttacher = new PhotoViewAttacher(imageView);
 
-**********************************StringTools************************************************
+**************StringTools*************
 
 
