@@ -1,3 +1,7 @@
+#觀看這個READ ME的時候，請點進來用RAW來看
+#這是我為了方便寫出來的一些工具類
+
+*********************Android ImageZoom*************************
 ImageView 放大滑動的方法：
 1.先到https://github.com/chrisbanes/PhotoView將
 allprojects {
@@ -25,4 +29,4 @@ PhotoViewAttacher mAttacher;
 imageuri = Uri.parse(get.getStringExtra("image"));
         imageView.setImageBitmap(new ImageTools(this).imageBitmap(imageuri));
         mAttacher = new PhotoViewAttacher(imageView);
-
+***********************StringTools**************************
